@@ -1,7 +1,7 @@
 import React from "react";
 import products from "../../data/products";
 import { ProductCard } from "./components/ProductCard";
-import { SideBar } from "../../components/SideBar";
+import { SideBar } from "../../components/SideBar/SideBar";
 import { v4 as uuidv4 } from "uuid";
 
 export const ProductsList = () => {
