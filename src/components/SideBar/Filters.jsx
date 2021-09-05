@@ -4,7 +4,6 @@ import { useSideBar } from "./SideBarContext";
 
 export const Filters = ({ filterList, heading }) => {
   const { onSelectFilter, filterBy } = useSideBar();
-  console.log({ filterBy });
   return (
     <>
       <h2 className={`mb-1 text-sm`}>{heading.toUpperCase()}</h2>

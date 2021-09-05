@@ -18,6 +18,8 @@ export const SideBarProvider = ({ children }) => {
     const target = event.target;
     const value = target.checked;
 
+    console.log(value);
+
     if (value) {
       setSideBar((prevValue) => {
         return {

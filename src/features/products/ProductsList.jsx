@@ -1,16 +1,26 @@
 import React from "react";
-import products from "../../data/products";
 import { ProductCard } from "./components/ProductCard";
 import { SideBar } from "../../components/SideBar/SideBar";
 import { useSideBar } from "../../components/SideBar/SideBarContext";
 import { filterProducts } from "./filterProducts";
 import { sortProducts } from "./sortProducts";
+import { useProducts } from "./ProductsContext";
+import initialValue from "../../data/products.json";
 
 export const ProductsList = () => {
+  const { products } = useProducts();
+
   const { filterBy, sortBy } = useSideBar();
-  const { productList } = products;
-  const filteredProducts = filterProducts(productList, filterBy);
-  const sortedProducts = sortProducts(filteredProducts, sortBy);
+
+  let filteredProducts, sortedProducts;
+
+  if (filterBy.length === 0 && sortBy === "none") {
+    sortedProducts = initialValue.productList;
+  } else {
+    filteredProducts = filterProducts(products, filterBy);
+    sortedProducts = sortProducts(filteredProducts, sortBy);
+  }
+
   const noProductsFound = filterBy.length > 0 && sortedProducts.length === 0;
 
   return (

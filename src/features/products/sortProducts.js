@@ -4,7 +4,7 @@ const discountedPrice = (price, discountPercent = 0) => {
 
 export const sortProducts = (products, sortBy) => {
   if (sortBy === "none") {
-    return products;
+    return [...products];
   }
 
   if (sortBy === "LOW_TO_HIGH") {
