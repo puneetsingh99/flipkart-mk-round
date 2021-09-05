@@ -4,7 +4,7 @@ const brandImage =
 
 export const Navbar = () => {
   return (
-    <header className="bg-brand py-4">
+    <header className="bg-brand py-4 sticky top-0">
       <div className="w-10/12 m-auto">
         <div className="w-20">
           <img src={brandImage} alt={`filpkart`} />

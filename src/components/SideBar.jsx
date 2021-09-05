@@ -1,5 +1,5 @@
 import React from "react";
 
 export const SideBar = () => {
-  return <h1>Sidebar</h1>;
+  return <aside className={`border border-red-500 px-8`}> sidear</aside>;
 };

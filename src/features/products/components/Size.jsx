@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 export const Size = ({ sizes }) => {
   return (
-    <div className={`flex items-center`}>
+    <div className={`flex items-center mb-2`}>
       <p className="text-sm">Sizes:</p>
       {sizes.map((size) => {
         return (
