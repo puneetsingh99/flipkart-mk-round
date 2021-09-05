@@ -1,0 +1,74 @@
+{
+  "productList": [
+    {
+      "image": "https://rukminim1.flixcart.com/image/496/595/k6xxua80/shirt/q/p/f/l-cm-st140-cobio-man-original-imafpap2wah2cvmf.jpeg?q=50",
+      "name": "Men Regular Fit Printed Spread Collar Casual Shirt",
+      "rating": 4.5,
+      "originalPrice": 7999,
+      "discountedPrice": 7499,
+      "gender": "Men",
+      "sizes": ["S", "M", "L"],
+      "brand": "COBIO MAN"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/496/595/kb89ea80/shirt/9/7/v/l-vr-st192-vero-lie-original-imafsmu3adzhgwjm.jpeg?q=50",
+      "name": "Printed Spread Collar Casual Shirt",
+      "rating": 4.5,
+      "originalPrice": 1888,
+      "discountedPrice": 568,
+      "gender": "Men",
+      "sizes": ["S"],
+      "brand": "VERO LIE"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/496/595/kjym9ow0/track-pant/b/q/j/xl-dv-track12-vero-lie-original-imafzewqcwma5wnz.jpeg?q=50",
+      "name": "Color Block Men Black Track Pants",
+      "rating": 3,
+      "originalPrice": 3000,
+      "discountedPrice": 1500,
+      "gender": "Men",
+      "sizes": ["M", "L", "XL"],
+      "brand": "VERO LIE"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/496/595/kctf0cw0/kurta/k/3/3/xl-dffo6-m-lala-fashion-original-imaftv2zjvf9gg9n.jpeg?q=50",
+      "name": "Women Solid Pure Cotton Straight Kurta (Pink)",
+      "rating": 4.1,
+      "originalPrice": 4000,
+      "discountedPrice": 3500,
+      "gender": "Women",
+      "sizes": ["L"],
+      "brand": "Rimeline Fashion"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/496/595/kjuby4w0/sari/f/u/h/free-6403raniblue-woman-dressed-in-a-traditional-eco-friendly-original-imafzbn4f9r8hgnt.jpeg?q=50",
+      "name": "Woven Banarasi Cotton Silk Saree (Pink)",
+      "rating": 3.9,
+      "originalPrice": 2599,
+      "discountedPrice": 1299,
+      "gender": "Women",
+      "sizes": ["M"],
+      "brand": "LOREZA"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/496/595/kjlrb0w0-0/kurta/u/3/a/xl-kk177ph-kipek-original-imafz4q6munpg3ms.jpeg?q=50",
+      "name": "Women Printed Rayon A-line Kurta (Pink)",
+      "rating": 4.3,
+      "originalPrice": 639,
+      "discountedPrice": 2099,
+      "gender": "Women",
+      "sizes": ["M"],
+      "brand": "kipek"
+    },
+    {
+      "image": "https://rukminim1.flixcart.com/image/496/595/kf75fgw0-0/t-shirt/f/6/j/xxl-t325-pwgh-seven-rocks-original-imafvpbgf6nchmfj.jpeg?q=50",
+      "name": "Solid Men tshirt",
+      "rating": 5,
+      "originalPrice": 262,
+      "discountedPrice": 1299,
+      "gender": "Men",
+      "sizes": ["S", "M", "L", "XL", "XXL"],
+      "brand": "SEVEN ROCKS"
+    }
+  ]
+}
