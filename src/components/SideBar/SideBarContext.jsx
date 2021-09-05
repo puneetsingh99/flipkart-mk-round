@@ -1,27 +1,53 @@
 import React, { createContext, useContext, useState } from "react";
-import { useLocalStorage } from "../../hooks/useLocalStorage";
 
 const SideBarContext = createContext(null);
 
 const initialValue = {
   sortBy: "none",
-  filterBy: "none",
+  filterBy: [],
 };
 
 export const SideBarProvider = ({ children }) => {
-  const persistentSideBar = useLocalStorage("flipkartSidebar", initialValue);
-  const [sideBar, setSideBar] = useState(persistentSideBar);
-  const onSelectFilter = () => {
-    console.log("filter");
+  const [sideBar, setSideBar] = useState(initialValue);
+
+  const onResetFilters = () => {
+    setSideBar(initialValue);
   };
 
-  const onSelectSort = () => {
-    console.log("sort");
+  const onSelectFilter = (event) => {
+    const target = event.target;
+    const value = target.checked;
+
+    if (value) {
+      setSideBar((prevValue) => {
+        return {
+          ...prevValue,
+          filterBy: [...prevValue.filterBy, event.target.name],
+        };
+      });
+    }
+
+    if (!value) {
+      setSideBar((prevValue) => {
+        return {
+          ...prevValue,
+          filterBy: prevValue.filterBy.filter(
+            (filter) => filter !== event.target.name
+          ),
+        };
+      });
+    }
+  };
+
+  const onSelectSort = (e) => {
+    setSideBar((prevValue) => {
+      return { ...prevValue, sortBy: e.target.value };
+    });
   };
 
   return (
     <SideBarContext.Provider
-      value={{ ...sideBar, onSelectFilter, onSelectSort }}
+      value={{ ...sideBar, onSelectFilter, onSelectSort, onResetFilters }}
     >
       {children}
     </SideBarContext.Provider>
